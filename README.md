@@ -39,3 +39,12 @@ BOOTSTRAP 4 : la formation ULTIME
 </div>
 ````
 
+### Les classes pour ajouter des couleurs
+Changer la couleur du texte et son opacité.
+````html
+<!-- text-white : change la couleur du texte en blanc -->
+<!-- text-white-50 : change la couleur du texte en blanc avec une opacité de 50 -->
+<header class="bg-dark text-white">
+   Chamelles & Co
+</header>
+````
