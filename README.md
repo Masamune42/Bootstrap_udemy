@@ -20,7 +20,6 @@ BOOTSTRAP 4 : la formation ULTIME
 ````
 
 ### Les classes pour changer la largeur d'un élément
-
 ````html
 <!-- w-50 : taille de 50% peu importe la taille de l'écran -->
 <img src="https://static.wixstatic.com/media/e649e6_70b603238fda46f6be31ee3796577b66~mv2.jpg" class="w-50"/>
@@ -29,3 +28,14 @@ BOOTSTRAP 4 : la formation ULTIME
 ````
 
 ### Les classes pour changer le fond
+````html
+<!-- bg-dark : change la couleur du fond en foncé -->
+<header class="bg-dark">
+   Chamelles & Co
+</header>
+<!-- bg-danger : change la couleur du fond en rouge -->
+<div class="bg-danger">
+   Ce site est en construction.
+</div>
+````
+
