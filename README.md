@@ -117,3 +117,17 @@ Inline : les uns à coté des autres
    - fixed-top : fixe un élément sur le haut de l'écran
    - fixed-bottom : sur le bas de l'écran (ex : chat Facebook)
    - sticky-top : l'élément reste en position initiale mais si le scroll arrive à l'élément, le laisse en haut de page
+   
+### Les classes pour changer le texte
+- text-left
+- text-center
+- text-right
+
+- text-lowercase
+- text-uppercase
+- text-capitalize
+
+- font-weight-bold
+- font-weight-light
+- font-weight-normal
+- font-italic
