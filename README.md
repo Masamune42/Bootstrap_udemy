@@ -131,3 +131,41 @@ Inline : les uns à coté des autres
 - font-weight-light
 - font-weight-normal
 - font-italic
+
+### Les classes pour ajouter l'ombre
+- shadow-sm
+- shadow
+- shadow-lg
+
+### Les classes pour les bordures
+````html
+<!-- border-top : bordure en haut uniquement -->
+<!-- border-secondary : change la couleur de la bordure -->
+<footer class="text-muted mt-5 p-3 text-right border-top border-secondary">
+   2019 © Chamelles & Co
+</footer>
+````
+
+### Les bordures arrondies
+````html
+<!-- rounded : ajoute des bordures arrondies -->
+<!-- rounded-circle : ajoute des bordures arrondies pour un carré -->
+<!-- rounded-pill : ajoute des bordures arrondies pour un rectangle -->
+<div class="bg-danger text-white w-75 p-3 mx-auto rounded">
+   Ce site est en construction.
+</div>
+````
+
+### Rendre les iFrames responsive
+````html
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yomrh4KKQEc" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen class="embed-responsive-item"></iframe>
+</div>
+````
+
+## Projet 1 : Tinder
+Projet permettant de mettre en ouvre toutes les bases apprises sur Bootstrap dans la précédente partie.
+### Container
+Un containeur sert à englobler l'ensemble du contenu de la page et qui permet les centrer.
