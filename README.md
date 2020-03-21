@@ -158,10 +158,13 @@ Inline : les uns à coté des autres
 
 ### Rendre les iFrames responsive
 ````html
+<!-- embed-responsive : rend les éléments embarqué (iframe) responsive -->
+<!-- embed-responsive-16by9 : Définit la taille d'écran (16:9) -->
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yomrh4KKQEc" frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen class="embed-responsive-item"></iframe>
+<!-- embed-responsive-item : déclare l'objet défini par embed-responsive dans la div parente -->
 </div>
 ````
 
