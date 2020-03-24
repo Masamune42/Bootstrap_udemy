@@ -172,3 +172,17 @@ allowfullscreen class="embed-responsive-item"></iframe>
 Projet permettant de mettre en ouvre toutes les bases apprises sur Bootstrap dans la précédente partie.
 ### Container
 Un containeur sert à englobler l'ensemble du contenu de la page et qui permet les centrer.
+
+## Les composants CSS
+### Les boutons
+
+````html
+<!-- Crée un bouton rouge -->
+<a href="" class="btn btn-danger">Bouton rouge</a>
+<!-- Crée un bouton avec un contour rouge -->
+<a href="" class="btn btn-outline-danger">Bouton avec contour rouge</a>
+<!-- Crée un gros bouton -->
+<a href="" class="btn btn-outline-danger btn-lg">Gros bouton</a>
+<!-- Crée un petit bouton -->
+<a href="" class="btn btn-outline-danger btn-sm">Petit bouton</a>
+````
