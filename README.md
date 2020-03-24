@@ -185,4 +185,6 @@ Un containeur sert à englobler l'ensemble du contenu de la page et qui permet l
 <a href="" class="btn btn-outline-danger btn-lg">Gros bouton</a>
 <!-- Crée un petit bouton -->
 <a href="" class="btn btn-outline-danger btn-sm">Petit bouton</a>
+<!-- Crée un bouton prenant toute la largeur de l'écran -->
+<a href="" class="btn btn-outline-danger btn-block">Bouton block</a>
 ````
