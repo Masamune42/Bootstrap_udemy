@@ -203,3 +203,19 @@ Un containeur sert à englobler l'ensemble du contenu de la page et qui permet l
   <p class="mb-0">Message en plus.</p>
 </div>
 ````
+
+### Les barres de navigation
+````html
+<!-- navbar : à utiliser pour chaque barre de navigation -->
+<!-- bg-light : fond de couleur gris clair -->
+<nav class="navbar bg-light">
+   <!-- navbar-brand : Nom de la marque -->
+   <div class="navbar-brand">Navigation</div>
+</nav>
+<!-- navbar-dark : barre de navigation à fond noir (transforme le texte en blanc) -->
+<!-- bg-dark : fond de couleur noir -->
+<nav class="navbar navbar-dark bg-dark">
+   <!-- navbar-brand : Nom de la marque -->
+   <div class="navbar-brand">Navigation</div>
+</nav>
+````
