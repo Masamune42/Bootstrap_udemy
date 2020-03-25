@@ -188,3 +188,18 @@ Un containeur sert à englobler l'ensemble du contenu de la page et qui permet l
 <!-- Crée un bouton prenant toute la largeur de l'écran -->
 <a href="" class="btn btn-outline-danger btn-block">Bouton block</a>
 ````
+
+### Les messages de succès et d'alertes
+````html
+<!-- Crée un message d'alerte vert -->
+<div class="alert alert-success"> succès </div>
+<!-- Crée un message d'alerte avec le lien de la couleur adaptée -->
+<div class="alert alert-primary">Alerte avec un <a href="" class="alert-link">lien</a> </div>
+<!-- Crée un message d'alerte avec un titre -->
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Titre alerte</h4>
+  <p>Contenu à afficher.</p>
+  <hr>
+  <p class="mb-0">Message en plus.</p>
+</div>
+````
