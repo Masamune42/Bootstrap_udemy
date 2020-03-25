@@ -219,3 +219,14 @@ Un containeur sert à englobler l'ensemble du contenu de la page et qui permet l
    <div class="navbar-brand">Navigation</div>
 </nav>
 ````
+
+### Les badges
+````html
+<!-- Crée un bouton avec un badge à l'intérieur -->
+<div class="btn btn-secondary">
+   Messages
+   <span class="badge badge-danger">0</span>
+</div>
+<!-- Badge dans un titre h3 de forme arrondi (ovale) -->
+<h3><span class="badge badge-pill badge-danger">Badge</span></h3>
+````
