@@ -230,3 +230,40 @@ Un containeur sert à englobler l'ensemble du contenu de la page et qui permet l
 <!-- Badge dans un titre h3 de forme arrondi (ovale) -->
 <h3><span class="badge badge-pill badge-danger">Badge</span></h3>
 ````
+
+### Les formulaires
+````html
+<section class="p-5 text-center">
+   <form>
+      <!-- form-group : permet à Bootstrap d'indiquer que le label est lié à l'input -->
+      <div class="form-group">
+            <label>Prénom</label>
+            <!-- input-group : indique ce que l'on veut rajouter à l'input -->
+            <div class="input-group">
+               <!-- input-group-prepend : indique que l'on veut rajouter quelque chose avant l'élément en question -->
+               <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+               </div>
+               <!-- form-control : design Bootstrap -->
+               <input type="text" name="prenom" placeholder="Saisissez votre prénom" class="form-control">
+            </div>
+            <!-- Ajoute une description pour l'input -->
+            <div class="form-text text-muted">Vous ne pouvez pa mettre de chiffre</div>
+      </div>
+
+      <div class="form-group">
+            <label>Adresse email</label>
+            <!-- readonly : lecture seule, grise l'input -->
+            <input type="mail" name="email" value="example@website.fr" readonly placeholder="Saisissez votre prénom"
+               class="form-control">
+      </div>
+
+      <div class="form-group">
+            <label>Adresse email</label>
+            <!-- form-control-plaintext : Affichage du texte uniquement sans bordure de l'input -->
+            <input type="mail" name="email2" value="example@website.fr" readonly
+               placeholder="Saisissez votre prénom" class="form-control-plaintext">
+      </div>
+   </form>
+</section>
+````

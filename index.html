@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="container">
     <nav class="navbar bg-light">
         <div class="navbar-brand">Navigation</div>
     </nav>
@@ -36,6 +36,39 @@
         Messages
         <span class="badge badge-danger">0</span>
     </div>
+    <section class="p-5 text-center">
+        <form>
+            <!-- form-group : permet à Bootstrap d'indiquer un groupe labal + input -->
+            <div class="form-group">
+                <label>Prénom</label>
+                <!-- input-group : groupe l'input -->
+                <div class="input-group">
+                    <!-- input-group-prepend : indique que l'on veut rajouter quelque chose avant l'élément en question -->
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <!-- form-control : design Bootstrap -->
+                    <input type="text" name="prenom" placeholder="Saisissez votre prénom" class="form-control">
+                </div>
+                <!-- Ajoute une description pour l'input -->
+                <div class="form-text text-muted">Vous ne pouvez pa mettre de chiffre</div>
+            </div>
+
+            <div class="form-group">
+                <label>Adresse email</label>
+                <!-- readonly : lecture seule, grise l'input -->
+                <input type="mail" name="email" value="example@website.fr" readonly placeholder="Saisissez votre prénom"
+                    class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Adresse email</label>
+                <!-- form-control-plaintext : Affichage du texte uniquement sans bordure de l'input -->
+                <input type="mail" name="email2" value="example@website.fr" readonly
+                    placeholder="Saisissez votre prénom" class="form-control-plaintext">
+            </div>
+        </form>
+    </section>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
