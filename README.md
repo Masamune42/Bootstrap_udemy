@@ -283,3 +283,24 @@ Ceux sont des pancartes pour informer les utilisateurs
     </div>
 </div>
 ````
+
+### Les cartes
+````html
+<!-- Création d'une card -->
+<div class="card">
+   <!-- card-img-top : indique que l'image fait partie de la card (pour garder les dimensions) -->
+        <img src="https://static.teteamodeler.com/media/cache/thumb_400/canard-explication-tte-modeler-du-mot-canard.jpeg"
+            alt="..." class="card-img-top">
+        <div class="card-header">
+            Une carte
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">
+                Le titre de la carte
+            </h5>
+            <div class="card-text">
+                Le texte qui décrit la carte actuelle
+            </div>
+        </div>
+    </div>
+````
