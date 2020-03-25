@@ -267,3 +267,19 @@ Un containeur sert à englobler l'ensemble du contenu de la page et qui permet l
    </form>
 </section>
 ````
+
+### Les jumbotrons
+Ceux sont des pancartes pour informer les utilisateurs
+````html
+<!-- A personnaliser à fond -->
+<!-- A placer en dehors d'un container -->
+<div class="jumbotron">
+    <div class="container">
+        <!-- display-4 : affichage d'un titre avec texte fin -->
+        <div class="display-4">Bienvenue</div>
+        <hr>
+        <!-- lead : sous-titre -->
+        <div class="lead">Ce site parle de Bootstrap</div>
+    </div>
+</div>
+````
