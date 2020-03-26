@@ -322,3 +322,13 @@ Ceux sont des pancartes pour informer les utilisateurs
 </div>
 ````
 
+### Les breadcrumbs (fil d'ariane)
+````html
+<ol class="breadcrumb mt-3">
+        <li class="breadcrumb-item" aria-current="page"><a href="">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Les fils d'ariane</li>
+    </ol>
+````
+
+## Projet 2 : Site de Tesla
+Projet permettant de mettre en ouvre toutes les bases apprises sur Bootstrap dans la précédente partie.
