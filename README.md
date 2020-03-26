@@ -304,3 +304,21 @@ Ceux sont des pancartes pour informer les utilisateurs
         </div>
     </div>
 ````
+
+### Les barres de progression
+````html
+<!-- progress : indique que la div contiendra au moins une progress bar -->
+<div class="progress mb-2">
+   <!-- progress-bar-striped : barre striée -->
+   <!-- progress-bar-animated : barre animée -->
+   <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;">50%</div>
+</div>
+
+<!-- Addition des barres jusqu'à un max de 100% -->
+<div class="progress">
+   <div class="progress-bar bg-dark" style="width: 60%;">60%</div>
+   <div class="progress-bar bg-success" style="width: 10%;">10%</div>
+   <div class="progress-bar bg-warning" style="width: 20%;">20%</div>
+</div>
+````
+
