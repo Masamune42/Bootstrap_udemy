@@ -398,3 +398,120 @@ Projet permettant de mettre en ouvre toutes les bases apprises sur Bootstrap dan
 
 ### Exercice pratique sur les colonnes (exercice-grille)
 Mini exercice pour mettre en oeuvre les éléments appris.
+
+## Les composants d'animation
+### Modals
+````html
+<!-- Bouton d'ouverture du modal -->
+<button class="btn btn-primary" data-toggle="modal" data-target="#example">
+   Ouvrir
+</button>
+
+<!-- Modal -->
+<div class="modal" id="example">
+   <!-- modal-dialog : Définit tout ce qui va composer la fenêtre -->
+   <!-- modal-dialog-centered : centre le modal -->
+   <!-- modal-sm (xl) : petit modal -->
+   <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+            <!-- HEADER -->
+            <div class="modal-header">
+               <h5 class="modal-title">Ma fenêtre</h5>
+               <!-- data-dismiss : retire le modal quand le bouton sera utitilisé -->
+               <button class="close" data-dismiss="modal">
+                  &times;
+               </button>
+            </div>
+            <!-- BODY -->
+            <div class="modal-body">
+               Le texte de la fenêtre
+            </div>
+            <!-- FOOTER -->
+            <div class="modal-footer">
+               <button class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+      </div>
+   </div>
+</div>
+````
+
+### Carrousels
+````html
+ <!-- slide : une image -->
+    <!-- carousel : plusieurs images qui vont défiler les unes après les autres -->
+    <!-- data-ride="carousel" : définit le comportement du carrousel -->
+    <div class="carousel slide" data-ride="carousel" id="carouselExample">
+
+        <!-- Indicateurs du carrousel -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExample" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Images du carrousel -->
+        <!-- carousel-inner : on rajoute chacun de nos slides à l'intérieur -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.dybex.com/modules/ph_simpleblog/covers/2.jpg" alt="Steins;Gate"
+                    class="d-block w-100">
+                    <!-- Zone de text sur l'image -->
+                    <div class="carousel-caption text-dark">
+                        <h5>Steins;Gate</h5>
+                        <p>Meilleur anime</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://pm1.narvii.com/6924/2b7439785c11261a878960b44fb295ec0981b3cbr1-1920-1009v2_uhq.jpg"
+                    alt="Made in Abyss" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Partie contrôle -->
+        <!-- Previous -->
+        <a class="carousel-control-prev" data-slide="prev" href="#carouselExample">
+            <!-- Définit la forme de la touche previous -->
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <!-- Next -->
+        <a class="carousel-control-next" data-slide="next" href="#carouselExample">
+            <!-- Définit la forme de la touche next -->
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+````
+
+### Infobulles (au clic)
+````html
+<!-- data-toggle : Choisi l'animation que l'on souhaite utiliser -->
+<!-- data-placement : position d'affichage de l'infobulle -->
+<!-- data-content : contenu de l'infobulle -->
+<!-- title : titre de l'infobulle -->
+<button class="btn btn-primary" data-toggle="popover" data-placement="top"
+   data-content="La version bêta n'est pas disponible." title="Information">
+   Accéder au site
+</button>
+<script>
+   $(function () {
+      $('[data-toggle="popover"]').popover()
+   })
+</script>
+````
+
+### Infobulles (au survol)
+````html
+<!-- data-toggle : Choisi l'animation que l'on souhaite utiliser -->
+<!-- data-placement : position d'affichage de l'infobulle -->
+<!-- data-content : contenu de l'infobulle -->
+<!-- title : titre de l'infobulle -->
+<button class="btn btn-primary" data-toggle="popover" data-placement="top"
+   data-content="La version bêta n'est pas disponible." title="Information">
+   Accéder au site
+</button>
+<script>
+   $(function () {
+      $('[data-toggle="popover"]').popover()
+   })
+</script>
+````
+
+### Les spoilers
