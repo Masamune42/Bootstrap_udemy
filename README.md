@@ -377,3 +377,24 @@ Projet permettant de mettre en ouvre toutes les bases apprises sur Bootstrap dan
 ````
 
 ### Aligner verticalement les éléments
+````html
+<!-- Aligner verticalement des éléments -->
+<div class="row mt-1 bg-warning" style="height: 100px">
+   <!-- align-self-center : aligne l'item au centre -->
+   <div class="col-4 p-3 align-self-center bg-success"></div>
+   <!-- align-self-start : aligne l'item en haut -->
+   <div class="col-4 p-3 align-self-start bg-secondary"></div>
+   <!-- align-self-end : aligne l'item en bas -->
+   <div class="col-4 p-3 align-self-end bg-dark"></div>
+</div>
+
+<!-- align-items-center : centre tous les éléments de la div -->
+<div class="row mt-1 align-items-center bg-warning" style="height: 100px">
+   <div class="col-4 p-3 bg-success"></div>
+   <div class="col-4 p-3 bg-secondary"></div>
+   <div class="col-4 p-3 bg-dark"></div>
+</div>
+````
+
+### Exercice pratique sur les colonnes (exercice-grille)
+Mini exercice pour mettre en oeuvre les éléments appris.
