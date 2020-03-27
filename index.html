@@ -117,6 +117,39 @@
         <li class="breadcrumb-item active" aria-current="page">Les fils d'ariane</li>
     </ol>
 
+    <!-- Création d'une ligne -->
+    <div class="row">
+        <!-- col-{/sm/md/lg/xl}-* -->
+        <div class="col-md-6 p-3 bg-dark"></div>
+        <div class="col-md-6 p-3 bg-success"></div>
+    </div>
+
+    <div class="row">
+        <div class="col p-3 bg-success"></div>
+        <div class="col p-3 bg-dark"></div>
+    </div>
+
+    <!-- A utiliser -->
+    <div class="row mt-3">
+        <!-- Donner au offset toujours le même type d'élément (sm,xl...) -->
+        <div class="col-sm-4 p-3 bg-success"></div>
+        <div class="col-sm-4 p-3 offset-sm-4 bg-dark"></div>
+    </div>
+
+    <!-- Même utilité mais dépécrié -->
+    <div class="row mt-3">
+        <!-- Donner au offset toujours le même type d'élément (sm,xl...) -->
+        <div class="col-sm-4 p-3 bg-success"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 p-3 bg-dark"></div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-sm-3 p-3 bg-success"></div>
+        <div class="col-sm-3 p-3 offset-sm-1 bg-secondary"></div>
+        <div class="col-sm-3 p-3 offset-sm-1 bg-dark"></div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

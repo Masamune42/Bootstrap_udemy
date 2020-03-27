@@ -332,3 +332,46 @@ Ceux sont des pancartes pour informer les utilisateurs
 
 ## Projet 2 : Site de Tesla
 Projet permettant de mettre en ouvre toutes les bases apprises sur Bootstrap dans la précédente partie.
+
+## Les grilles Bootstrap
+### La grille
+````html
+<!-- Création d'une ligne -->
+<div class="row">
+   <!-- col-{/sm/md/lg/xl}-* -->
+   <div class="col-md-6 p-3 bg-dark"></div>
+   <div class="col-md-6 p-3 bg-success"></div>
+</div>
+
+<div class="row">
+   <div class="col p-3 bg-success"></div>
+   <div class="col p-3 bg-dark"></div>
+</div>
+````
+
+### Prioriser des éléments
+````html
+<div class="row">
+   <!-- col-{/sm/md/lg/xl}-* -->
+   <!-- order-* : défini l'ordre des div -->
+   <div class="col-md-6 p-3 bg-dark order-2"></div>
+   <div class="col-md-6 p-3 bg-success order-1"></div>
+</div>
+````
+
+### Décaler les éléments d'un nombre de colonnes
+````html
+<!-- Même utilité mais dépécrié -->
+    <div class="row mt-3">
+        <!-- Donner au offset toujours le même type d'élément (sm,xl...) -->
+        <div class="col-sm-4 p-3 bg-success"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 p-3 bg-dark"></div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-sm-3 p-3 bg-success"></div>
+        <div class="col-sm-3 p-3 offset-sm-1 bg-secondary"></div>
+        <div class="col-sm-3 p-3 offset-sm-1 bg-dark"></div>
+    </div>
+````
