@@ -375,3 +375,5 @@ Projet permettant de mettre en ouvre toutes les bases apprises sur Bootstrap dan
         <div class="col-sm-3 p-3 offset-sm-1 bg-dark"></div>
     </div>
 ````
+
+### Aligner verticalement les éléments
