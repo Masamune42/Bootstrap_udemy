@@ -515,3 +515,98 @@ Mini exercice pour mettre en oeuvre les éléments appris.
 ````
 
 ### Les spoilers
+````html
+<!-- BOUTONS -->
+<!-- data-target : id de la cible -->
+<button class="btn btn-primary" data-toggle="collapse" data-target="#spoilerA">
+   Afficher
+</button>
+
+<!-- data-target : pour les boutons -->
+<!-- href : pour les liens -->
+<a href="#spoilerB" data-toggle="collapse">
+   Afficher
+</a>
+
+<!-- Ouverture par la classe -->
+<button class="btn btn-primary" data-toggle="collapse" data-target=".spoiler-example">
+   Afficher
+</button>
+
+<!-- SPOILERS -->
+<div id="spoilerA" class="collapse spoiler-example">
+   <div class="card card-body">
+      Le texte du spoiler premier.
+   </div>
+</div>
+
+<div id="spoilerB" class="collapse spoiler-example">
+   <div class="card card-body">
+      Le texte du spoiler deuxième.
+   </div>
+</div>
+````
+
+### Boutons avec liste déroulante
+````html
+<!-- CLASSIQUE -->
+<div class="dropdown">
+   <!-- BOUTON -->
+   <!-- dropdown-toggle : indique que le bouton contient une liste -->
+   <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+      Options
+   </button>
+
+   <!-- MENU -->
+   <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Action</a>
+   </div>
+</div>
+
+<!-- BOUTON + MENU DEROULANT A DROITE -->
+<div class="btn-group">
+   <!-- BOUTON -->
+   <!-- dropdown-toggle : indique que le bouton contient une liste -->
+   <button class="btn btn-danger">
+      Options
+   </button>
+   <button class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+
+   </button>
+
+   <!-- MENU -->
+   <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Action</a>
+   </div>
+</div>
+````
+
+
+### Navbar avec menu burger
+````html
+<!-- navbar-expand-sm : détermine quand la barre passe en menu burger -->
+<nav class="navbar navbar-dark navbar-expand-sm bg-dark mt-1">
+   <a class="navbar-brand" href="#">Navigation</a>
+
+   <!-- SYSTEME DE SPOILER DANS LA NAVBAR -->
+   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <!-- LIENS DE LA NAVBAR -->
+   <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Lien</a>
+            </li>
+      </ul>
+   </div>
+</nav>
+````
