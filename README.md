@@ -610,3 +610,60 @@ Mini exercice pour mettre en oeuvre les éléments appris.
    </div>
 </nav>
 ````
+
+## Projet 3 : Site Harry Potter
+### A retenir
+fade permet d'ouvrir une modal de façon progressive
+````html
+<!-- MODAL --->
+    <div class="modal fade" id="echarpeModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="w-100"
+                        src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" />
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                        title="La version bêta n'est pas disponible">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+````
+
+## SASS et BOOTSTRAP
+Bootstrap 4 est créé à partir de SASS. Permet de :
+- Personnaliser des variables
+- Créer de nouvelels fonctionnalités
+- Créer son propre thème
+
+### Installation
+- Installer node js
+- Dans le projet :
+````console
+$ npm init
+````
+- Donner un nom au projet -> package.json créé
+````console
+$ npm install bootstrap --save
+````
+
+- dossier node_modules/bootstrap/scss : Contient tous les fichiers scss (ne pas modifier les valeurs des fichiers sources).
+- Créer un nouveau fichier .scss à la racine du projet
+
+### Modifications
+https://getbootstrap.com/docs/4.0/getting-started/theming/
+````scss
+// Importe de TOUT Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+````
+
+Voir le cours sur SASS pour plus de détails
