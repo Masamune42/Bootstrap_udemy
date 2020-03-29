@@ -645,7 +645,10 @@ Bootstrap 4 est créé à partir de SASS. Permet de :
 - Créer de nouvelels fonctionnalités
 - Créer son propre thème
 
+Voir le cours sur SASS pour plus de détails
+
 ### Installation
+Nous allons utiliser Node.js afin de récupérer les fichiers de Bootstrap en local pour les modifier.
 - Installer node js
 - Dans le projet :
 ````console
@@ -662,8 +665,36 @@ $ npm install bootstrap --save
 ### Modifications
 https://getbootstrap.com/docs/4.0/getting-started/theming/
 ````scss
-// Importe de TOUT Bootstrap
+// Importation de TOUT Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 ````
 
-Voir le cours sur SASS pour plus de détails
+- Tout BOOTSTRAP va se trouver dans le fichier default.css grâce à l'import
+- Méthode classique :
+````console
+$ sass --watch default.scss:default.css
+````
+- Méthode pour optimiser la taille du fichier css :
+````console
+sass --watch default.scss:default.css --style compressed
+````
+
+Il faut déclarer les variables modifiées AVANT l'importation de Bootstrap, sinon Bootstrap ne prendra pas en compte les nouvelles variables.
+
+Tout Bootstrap est une liste de clé / valeur.
+````scss
+// On peut changer les couleurs de thème
+$theme-colors: (
+  "primary": #563D7C,
+  "danger": #ff4136,
+   // On peut créer un nouveau thème
+  "believemy": #F66F19
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+````
+
+### Variables modifiables
+- Dans sass-bootstrap/node-modules/bootstrap/_variables.scss : on a la liste de toutes les variables modifiables MAIS uniquement dans le fichier scss créé.
+   - les puissances de valeurs d'espacement (margin, padding...)
+   - grid-breakpoints : xs, sm,... (tailles d'écran)
