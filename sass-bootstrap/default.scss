@@ -1,3 +1,8 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+$theme-colors: (
+  "primary": #563D7C,
+  "danger": #ff4136,
+  "believemy": #F66F19
+);
 
-// D'autres notions à voir dans le cours SASS
+
+@import "node_modules/bootstrap/scss/bootstrap";

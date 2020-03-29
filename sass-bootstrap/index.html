@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>SASS ET BOOTSTRAP</title>
+    <link rel="stylesheet" href="default.css">
 </head>
+
 <body>
-    
+    <h1 class="text-center text-primary">SASS et BOOTSTRAP</h1>
+    <section class="bg-believemy p-5 text-white bg-believemy">
+        <div class="mx-auto" style="width: 400px">
+            <h2>Contactez-nous</h2>
+            <form>
+                <div class="form-group">
+                    <label>Adresse email</label>
+                    <input type="email" class="form-control" placeholder="Entrez votre adresse email">
+                    <small id="emailHelp" class="form-text text-light">Nous ne partagerons pas votre adresse
+                        email.</small>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light">Soumettre</button>
+            </form>
+        </div>
+    </section>
 </body>
+
 </html>
