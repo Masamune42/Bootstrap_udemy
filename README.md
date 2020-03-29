@@ -650,7 +650,7 @@ Voir le cours sur SASS pour plus de détails
 ### Installation
 Nous allons utiliser Node.js afin de récupérer les fichiers de Bootstrap en local pour les modifier.
 - Installer node js
-- Dans le projet :
+- Dans le projet (dossier sass-bootstrap ici) :
 ````console
 $ npm init
 ````
@@ -661,6 +661,12 @@ $ npm install bootstrap --save
 
 - dossier node_modules/bootstrap/scss : Contient tous les fichiers scss (ne pas modifier les valeurs des fichiers sources).
 - Créer un nouveau fichier .scss à la racine du projet
+
+### Récupération d'un projet existant
+Pour récupérer un projet et l'installer
+````console
+$ npm install
+````
 
 ### Modifications
 https://getbootstrap.com/docs/4.0/getting-started/theming/
